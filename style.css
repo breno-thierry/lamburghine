@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300');
+
+* {
+    font-size: "poppins", sans-serif;
+    margin: 0;
+    /*espacamento externo */
+    padding: 0;
+    /*espacamnto interno */
+    box-sizing: border-box;
+
+}
+
+/* * asterisco significa tudo, ele vai aplicar esse estilo para tudo */
+html {
+    scroll-snap-type: y mandatory;
+}
+
+video,
+.img-tesla {
+    width: 100%;
+    /* largura */
+    height: 100%;
+    /* altura */
+    position: absolute;
+    /* posicionar o item numa posicao exta que eu desejar*/
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* define quem fica na frente de quem */
+    object-fit: cover;
+    /* faz com que o video cubra toda tela */
+    filter: brightness(60%);
+
+}
+
+.logo {
+    filter: brightness(100);
+    position: fixed;
+    width: 100px;
+}
+
+.item {
+    display: flex;
+    /* habita algumas propriedades css*/
+
+    justify-content: space-between;
+    /* cria um espacamento entre os itens */
+    flex-direction: column;
+    /*deixar um item debaixo do outro */
+
+    position: relative;
+    height: 100vh;
+    /* tela toda - altura */
+    width: 100vw;
+    /* tela toda - largura */
+    scroll-snap-align: start;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.sub-titulo {
+    color: white;
+}
+
+.info-carro {
+    margin-top: 80px;
+    text-align: center;
+
+}
+
+.rodape {
+    text-align: center;
+    /* alinha meu item ao centro */
+
+}
+
+button {
+    background-color: whitesmoke;
+    color: whitw;
+    padding: 7px 80px;
+    border-radius: 5px;
+    /*arredonda a borda do botao*/
+    border: none;
+    /* tira a borda do botao */
+    cursor: pointer;
+    /*coloca a maosinha no lugar do mouse */
+}
+
+
+
+
+
+.test-drive {
+    color: black;
+    background-color: white;
+
+}
+
+.texto-rodape {
+    color: white;
+    font-size: 20px;
+    /*tamanho do texto */
+    margin-top: 10px;
+}
+
+.formulario {
+    position: fixed;
+    top: 40px;
+    width: 600px;
+    height: 100%;
+    z-index: 3;
+    left: -50%;
+    transition: 1.5s;
+}
